@@ -1,0 +1,28 @@
+get http://localhost:3002/Profes HTTP/1.1
+
+###
+get http://localhost:3002/Profes/5 HTTP/1.1
+
+###
+POST http://localhost:3002/Profes  HTTP/1.1
+Content-Type:  application/json
+
+{
+    "nombre": "Ro",
+    "apellido": "N",
+    "edad":1 ,
+    "materia":"Ingles" ,
+    "correo": "rocionaran",
+    "telefono": "+549" 
+}
+
+###
+PUT http://localhost:3002/Profes/7 HTTP/1.1
+Content-Type:  application/json
+
+{
+    "edad":23
+}
+
+###
+DELETE http://localhost:3002/Profes/7 HTTP/1.1
